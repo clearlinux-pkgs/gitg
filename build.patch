@@ -1,0 +1,11 @@
+--- gitg-3.30.1/meson.build~	2018-10-25 20:09:17.000000000 +0000
++++ gitg-3.30.1/meson.build	2019-01-24 17:31:44.817273836 +0000
+@@ -130,7 +130,7 @@
+ gtk_dep = dependency('gtk+-3.0', version: '>= 3.20.0')
+ gtkspell_dep = dependency('gtkspell3-3.0')
+ gtksourceview_dep = dependency('gtksourceview-3.0', version: '>= 3.10')
+-libgit2_glib_dep = dependency('libgit2-glib-1.0', version: ['>= 0.25.0', '< 0.27.0'])
++libgit2_glib_dep = dependency('libgit2-glib-1.0', version: ['>= 0.25.0'])
+ libpeas_dep = dependency('libpeas-1.0')
+ libsecret_dep = dependency('libsecret-1')
+ libsoup_dep = dependency('libsoup-2.4')

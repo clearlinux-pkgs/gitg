@@ -1,0 +1,12 @@
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+vala
+buildreq-gnome
+gtkspell3-dev
+intltool
+libgee-dev
+gtksourceview-dev
+compat-gtksourceview-soname3-dev
+libgit2-dev
+libgit2-glib
+libgit2-glib-dev
