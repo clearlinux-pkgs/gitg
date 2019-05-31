@@ -72,6 +72,7 @@ libgitg-1.0.so.0:gitg_commit_model_commit_from_iter
 libgitg-1.0.so.0:gitg_commit_model_commit_from_path
 libgitg-1.0.so.0:gitg_commit_model_construct
 libgitg-1.0.so.0:gitg_commit_model_get
+libgitg-1.0.so.0:gitg_commit_model_get_include
 libgitg-1.0.so.0:gitg_commit_model_get_limit
 libgitg-1.0.so.0:gitg_commit_model_get_permanent_lanes
 libgitg-1.0.so.0:gitg_commit_model_get_repository
@@ -160,8 +161,10 @@ libgitg-1.0.so.0:gitg_diff_stat_get_type
 libgitg-1.0.so.0:gitg_diff_stat_new
 libgitg-1.0.so.0:gitg_diff_stat_set_added
 libgitg-1.0.so.0:gitg_diff_stat_set_removed
+libgitg-1.0.so.0:gitg_diff_view_apply_link_tags
 libgitg-1.0.so.0:gitg_diff_view_commit_details_construct
 libgitg-1.0.so.0:gitg_diff_view_commit_details_get_commit
+libgitg-1.0.so.0:gitg_diff_view_commit_details_get_config_file
 libgitg-1.0.so.0:gitg_diff_view_commit_details_get_expanded
 libgitg-1.0.so.0:gitg_diff_view_commit_details_get_expander_visible
 libgitg-1.0.so.0:gitg_diff_view_commit_details_get_parent_commit
@@ -169,6 +172,7 @@ libgitg-1.0.so.0:gitg_diff_view_commit_details_get_type
 libgitg-1.0.so.0:gitg_diff_view_commit_details_get_use_gravatar
 libgitg-1.0.so.0:gitg_diff_view_commit_details_new
 libgitg-1.0.so.0:gitg_diff_view_commit_details_set_commit
+libgitg-1.0.so.0:gitg_diff_view_commit_details_set_config_file
 libgitg-1.0.so.0:gitg_diff_view_commit_details_set_expanded
 libgitg-1.0.so.0:gitg_diff_view_commit_details_set_expander_visible
 libgitg-1.0.so.0:gitg_diff_view_commit_details_set_parent_commit
@@ -248,6 +252,7 @@ libgitg-1.0.so.0:gitg_diff_view_file_set_expanded
 libgitg-1.0.so.0:gitg_diff_view_file_set_new_is_workdir
 libgitg-1.0.so.0:gitg_diff_view_file_set_renderer
 libgitg-1.0.so.0:gitg_diff_view_file_set_repository
+libgitg-1.0.so.0:gitg_diff_view_follow_if_link
 libgitg-1.0.so.0:gitg_diff_view_get_changes_inline
 libgitg-1.0.so.0:gitg_diff_view_get_commit
 libgitg-1.0.so.0:gitg_diff_view_get_context_lines
@@ -352,6 +357,7 @@ libgitg-1.0.so.0:gitg_lanes_get_inactive_collapse
 libgitg-1.0.so.0:gitg_lanes_get_inactive_enabled
 libgitg-1.0.so.0:gitg_lanes_get_inactive_gap
 libgitg-1.0.so.0:gitg_lanes_get_inactive_max
+libgitg-1.0.so.0:gitg_lanes_get_miss_commits
 libgitg-1.0.so.0:gitg_lanes_get_type
 libgitg-1.0.so.0:gitg_lanes_new
 libgitg-1.0.so.0:gitg_lanes_next
@@ -360,6 +366,7 @@ libgitg-1.0.so.0:gitg_lanes_set_inactive_collapse
 libgitg-1.0.so.0:gitg_lanes_set_inactive_enabled
 libgitg-1.0.so.0:gitg_lanes_set_inactive_gap
 libgitg-1.0.so.0:gitg_lanes_set_inactive_max
+libgitg-1.0.so.0:gitg_lanes_set_miss_commits
 libgitg-1.0.so.0:gitg_param_spec_async
 libgitg-1.0.so.0:gitg_param_spec_credentials_manager
 libgitg-1.0.so.0:gitg_param_spec_label_renderer
@@ -436,6 +443,8 @@ libgitg-1.0.so.0:gitg_remote_get_state
 libgitg-1.0.so.0:gitg_remote_get_transfer_progress
 libgitg-1.0.so.0:gitg_remote_get_type
 libgitg-1.0.so.0:gitg_remote_new
+libgitg-1.0.so.0:gitg_remote_push
+libgitg-1.0.so.0:gitg_remote_push_finish
 libgitg-1.0.so.0:gitg_remote_set_credentials_provider
 libgitg-1.0.so.0:gitg_remote_set_fetch_specs
 libgitg-1.0.so.0:gitg_remote_set_push_specs
