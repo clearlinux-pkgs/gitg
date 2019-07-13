@@ -4,7 +4,7 @@
 #
 Name     : gitg
 Version  : 3.32.0
-Release  : 5
+Release  : 6
 URL      : https://github.com/GNOME/gitg/archive/v3.32.0/gitg-3.32.0.tar.gz
 Source0  : https://github.com/GNOME/gitg/archive/v3.32.0/gitg-3.32.0.tar.gz
 Summary  : GNOME GUI client to view git repositories
