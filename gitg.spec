@@ -4,7 +4,7 @@
 #
 Name     : gitg
 Version  : 3.32.1
-Release  : 9
+Release  : 10
 URL      : https://github.com/GNOME/gitg/archive/v3.32.1/gitg-3.32.1.tar.gz
 Source0  : https://github.com/GNOME/gitg/archive/v3.32.1/gitg-3.32.1.tar.gz
 Summary  : GNOME GUI client to view git repositories
@@ -30,6 +30,7 @@ BuildRequires : libgit2-dev
 BuildRequires : libgit2-glib
 BuildRequires : libgit2-glib-dev
 BuildRequires : libpeas-dev
+BuildRequires : libsecret-dev
 BuildRequires : libsoup-dev
 BuildRequires : pkgconfig(libdazzle-1.0)
 BuildRequires : pkgconfig(libpeas-1.0)
@@ -134,13 +135,15 @@ python3 components for the gitg package.
 
 %prep
 %setup -q -n gitg-3.32.1
+cd %{_builddir}/gitg-3.32.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1564059605
+export SOURCE_DATE_EPOCH=1582930143
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -149,13 +152,20 @@ export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
 export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
 export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
-CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --prefix /usr --buildtype=plain   builddir
+CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --libdir=lib64 --prefix=/usr --buildtype=plain   builddir
 ninja -v -C builddir
+
+%check
+export LANG=C.UTF-8
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
+meson test -C builddir
 
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/gitg
-cp COPYING %{buildroot}/usr/share/package-licenses/gitg/COPYING
-cp win32/installer/COPYING.rtf %{buildroot}/usr/share/package-licenses/gitg/win32_installer_COPYING.rtf
+cp %{_builddir}/gitg-3.32.1/COPYING %{buildroot}/usr/share/package-licenses/gitg/881b050efe0ca3ad845b81debc6c1b4a1afa5a3e
+cp %{_builddir}/gitg-3.32.1/win32/installer/COPYING.rtf %{buildroot}/usr/share/package-licenses/gitg/628dd34e8502d93640e1b43692527e4ea54ccf2e
 DESTDIR=%{buildroot} ninja -C builddir install
 %find_lang gitg
 
@@ -208,8 +218,8 @@ DESTDIR=%{buildroot} ninja -C builddir install
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/gitg/COPYING
-/usr/share/package-licenses/gitg/win32_installer_COPYING.rtf
+/usr/share/package-licenses/gitg/628dd34e8502d93640e1b43692527e4ea54ccf2e
+/usr/share/package-licenses/gitg/881b050efe0ca3ad845b81debc6c1b4a1afa5a3e
 
 %files man
 %defattr(0644,root,root,0755)
