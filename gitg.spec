@@ -4,10 +4,10 @@
 #
 Name     : gitg
 Version  : 3.32.1
-Release  : 10
+Release  : 11
 URL      : https://github.com/GNOME/gitg/archive/v3.32.1/gitg-3.32.1.tar.gz
 Source0  : https://github.com/GNOME/gitg/archive/v3.32.1/gitg-3.32.1.tar.gz
-Summary  : GNOME GUI client to view git repositories
+Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: gitg-bin = %{version}-%{release}
@@ -30,7 +30,6 @@ BuildRequires : libgit2-dev
 BuildRequires : libgit2-glib
 BuildRequires : libgit2-glib-dev
 BuildRequires : libpeas-dev
-BuildRequires : libsecret-dev
 BuildRequires : libsoup-dev
 BuildRequires : pkgconfig(libdazzle-1.0)
 BuildRequires : pkgconfig(libpeas-1.0)
@@ -74,7 +73,6 @@ Requires: gitg-lib = %{version}-%{release}
 Requires: gitg-bin = %{version}-%{release}
 Requires: gitg-data = %{version}-%{release}
 Provides: gitg-devel = %{version}-%{release}
-Requires: gitg = %{version}-%{release}
 Requires: gitg = %{version}-%{release}
 
 %description dev
@@ -142,15 +140,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582930143
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1586228708
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --libdir=lib64 --prefix=/usr --buildtype=plain   builddir
 ninja -v -C builddir

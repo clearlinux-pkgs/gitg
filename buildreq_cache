@@ -1,7 +1,6 @@
 3.32.1
 libdazzle-dev
 libpeas-dev
-libsecret-dev
 libsoup-dev
 pkgconfig(libdazzle-1.0)
 pkgconfig(libpeas-1.0)
