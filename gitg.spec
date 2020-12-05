@@ -4,7 +4,7 @@
 #
 Name     : gitg
 Version  : 3.32.1
-Release  : 13
+Release  : 14
 URL      : https://github.com/GNOME/gitg/archive/v3.32.1/gitg-3.32.1.tar.gz
 Source0  : https://github.com/GNOME/gitg/archive/v3.32.1/gitg-3.32.1.tar.gz
 Summary  : No detailed summary available
@@ -36,6 +36,7 @@ BuildRequires : pkgconfig(libpeas-1.0)
 BuildRequires : pkgconfig(libsecret-1)
 BuildRequires : pkgconfig(libsoup-2.4)
 BuildRequires : vala
+Patch1: 0001-Allow-nullable-head-parameter-in-stash_if_needed.patch
 
 %description
 To create the installer you need to follow the next steps:
@@ -134,13 +135,14 @@ python3 components for the gitg package.
 %prep
 %setup -q -n gitg-3.32.1
 cd %{_builddir}/gitg-3.32.1
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1586228708
+export SOURCE_DATE_EPOCH=1607127457
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
