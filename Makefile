@@ -1,5 +1,5 @@
 PKG_NAME := gitg
-URL = https://github.com/GNOME/gitg/archive/v3.32.1/gitg-3.32.1.tar.gz
+URL = https://download.gnome.org/sources/gitg/3.32/gitg-3.32.1.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common
