@@ -4,7 +4,7 @@
 #
 Name     : gitg
 Version  : 3.32.1
-Release  : 23
+Release  : 24
 URL      : https://download.gnome.org/sources/gitg/3.32/gitg-3.32.1.tar.xz
 Source0  : https://download.gnome.org/sources/gitg/3.32/gitg-3.32.1.tar.xz
 Summary  : No detailed summary available
