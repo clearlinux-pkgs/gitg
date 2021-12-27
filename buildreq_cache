@@ -1,8 +1,10 @@
-3.32.1
+41
+gspell-dev
+json-glib-dev
 libdazzle-dev
 libpeas-dev
-libsoup-dev
+pkgconfig(gspell-1)
+pkgconfig(json-glib-1.0)
 pkgconfig(libdazzle-1.0)
 pkgconfig(libpeas-1.0)
 pkgconfig(libsecret-1)
-pkgconfig(libsoup-2.4)

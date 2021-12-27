@@ -10,12 +10,12 @@ libgirepository-1.0.so.1
 libgit2-glib-1.0.so.0
 libglib-2.0.so.0
 libgobject-2.0.so.0
+libgspell-1.so.2
 libgtk-3.so.0
-libgtksourceview-3.0.so.1
-libgtkspell3-3.so.0
+libgtksourceview-4.so.0
+libjson-glib-1.0.so.0
 libm.so.6
 libpango-1.0.so.0
 libpeas-1.0.so.0
 libsecret-1.so.0
-libsoup-2.4.so.1
 libxml2.so.2
