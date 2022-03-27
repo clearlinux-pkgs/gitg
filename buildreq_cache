@@ -4,6 +4,7 @@ json-glib-dev
 libdazzle-dev
 libpeas-dev
 pkgconfig(gspell-1)
+pkgconfig(gtksourceview-4)
 pkgconfig(json-glib-1.0)
 pkgconfig(libdazzle-1.0)
 pkgconfig(libpeas-1.0)

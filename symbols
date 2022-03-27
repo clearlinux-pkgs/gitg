@@ -93,6 +93,7 @@ libgitg-1.0.so.0:gitg_commit_remove_lane
 libgitg-1.0.so.0:gitg_commit_set_mylane
 libgitg-1.0.so.0:gitg_commit_set_tag
 libgitg-1.0.so.0:gitg_commit_update_lanes
+libgitg-1.0.so.0:gitg_credentials_error_get_type
 libgitg-1.0.so.0:gitg_credentials_error_quark
 libgitg-1.0.so.0:gitg_credentials_manager_construct
 libgitg-1.0.so.0:gitg_credentials_manager_credentials
@@ -104,6 +105,7 @@ libgitg-1.0.so.0:gitg_credentials_provider_credentials
 libgitg-1.0.so.0:gitg_credentials_provider_get_type
 libgitg-1.0.so.0:gitg_date_construct
 libgitg-1.0.so.0:gitg_date_construct_for_date_time
+libgitg-1.0.so.0:gitg_date_error_get_type
 libgitg-1.0.so.0:gitg_date_error_quark
 libgitg-1.0.so.0:gitg_date_for_display
 libgitg-1.0.so.0:gitg_date_get_date
@@ -345,6 +347,7 @@ libgitg-1.0.so.0:gitg_hook_set_environment
 libgitg-1.0.so.0:gitg_hook_set_name
 libgitg-1.0.so.0:gitg_hook_set_working_directory
 libgitg-1.0.so.0:gitg_init
+libgitg-1.0.so.0:gitg_init_error_get_type
 libgitg-1.0.so.0:gitg_init_error_quark
 libgitg-1.0.so.0:gitg_label_renderer_construct
 libgitg-1.0.so.0:gitg_label_renderer_draw
@@ -445,6 +448,7 @@ libgitg-1.0.so.0:gitg_remote_disconnect
 libgitg-1.0.so.0:gitg_remote_disconnect_finish
 libgitg-1.0.so.0:gitg_remote_download
 libgitg-1.0.so.0:gitg_remote_download_finish
+libgitg-1.0.so.0:gitg_remote_error_get_type
 libgitg-1.0.so.0:gitg_remote_error_quark
 libgitg-1.0.so.0:gitg_remote_fetch
 libgitg-1.0.so.0:gitg_remote_fetch_finish
@@ -580,6 +584,7 @@ libgitg-1.0.so.0:gitg_stage_diff_workdir
 libgitg-1.0.so.0:gitg_stage_diff_workdir_all
 libgitg-1.0.so.0:gitg_stage_diff_workdir_all_finish
 libgitg-1.0.so.0:gitg_stage_diff_workdir_finish
+libgitg-1.0.so.0:gitg_stage_error_get_type
 libgitg-1.0.so.0:gitg_stage_error_quark
 libgitg-1.0.so.0:gitg_stage_file_status
 libgitg-1.0.so.0:gitg_stage_get_head_tree

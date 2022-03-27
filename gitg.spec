@@ -4,7 +4,7 @@
 #
 Name     : gitg
 Version  : 41
-Release  : 29
+Release  : 30
 URL      : https://download.gnome.org/sources/gitg/41/gitg-41.tar.xz
 Source0  : https://download.gnome.org/sources/gitg/41/gitg-41.tar.xz
 Summary  : No detailed summary available
@@ -33,6 +33,7 @@ BuildRequires : libgit2-glib
 BuildRequires : libgit2-glib-dev
 BuildRequires : libpeas-dev
 BuildRequires : pkgconfig(gspell-1)
+BuildRequires : pkgconfig(gtksourceview-4)
 BuildRequires : pkgconfig(json-glib-1.0)
 BuildRequires : pkgconfig(libdazzle-1.0)
 BuildRequires : pkgconfig(libpeas-1.0)
@@ -142,7 +143,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1640638347
+export SOURCE_DATE_EPOCH=1648411574
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
