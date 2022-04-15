@@ -4,7 +4,7 @@
 #
 Name     : gitg
 Version  : 41
-Release  : 30
+Release  : 31
 URL      : https://download.gnome.org/sources/gitg/41/gitg-41.tar.xz
 Source0  : https://download.gnome.org/sources/gitg/41/gitg-41.tar.xz
 Summary  : No detailed summary available
@@ -39,6 +39,7 @@ BuildRequires : pkgconfig(libdazzle-1.0)
 BuildRequires : pkgconfig(libpeas-1.0)
 BuildRequires : pkgconfig(libsecret-1)
 BuildRequires : vala
+Patch1: backport-meson-drop-unused-argument-for-i18n.merge_file.patch
 
 %description
 To create the installer you need to follow the next steps:
@@ -137,13 +138,14 @@ python3 components for the gitg package.
 %prep
 %setup -q -n gitg-41
 cd %{_builddir}/gitg-41
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1648411574
+export SOURCE_DATE_EPOCH=1649983702
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
