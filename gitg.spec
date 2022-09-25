@@ -4,7 +4,7 @@
 #
 Name     : gitg
 Version  : 41
-Release  : 33
+Release  : 34
 URL      : https://download.gnome.org/sources/gitg/41/gitg-41.tar.xz
 Source0  : https://download.gnome.org/sources/gitg/41/gitg-41.tar.xz
 Summary  : No detailed summary available
@@ -145,7 +145,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1649983702
+export SOURCE_DATE_EPOCH=1664145420
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -159,8 +159,8 @@ ninja -v -C builddir
 
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/gitg
-cp %{_builddir}/gitg-41/COPYING %{buildroot}/usr/share/package-licenses/gitg/881b050efe0ca3ad845b81debc6c1b4a1afa5a3e
-cp %{_builddir}/gitg-41/win32/installer/COPYING.rtf %{buildroot}/usr/share/package-licenses/gitg/628dd34e8502d93640e1b43692527e4ea54ccf2e
+cp %{_builddir}/gitg-%{version}/COPYING %{buildroot}/usr/share/package-licenses/gitg/881b050efe0ca3ad845b81debc6c1b4a1afa5a3e || :
+cp %{_builddir}/gitg-%{version}/win32/installer/COPYING.rtf %{buildroot}/usr/share/package-licenses/gitg/628dd34e8502d93640e1b43692527e4ea54ccf2e || :
 DESTDIR=%{buildroot} ninja -C builddir install
 %find_lang gitg
 
