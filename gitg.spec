@@ -4,7 +4,7 @@
 #
 Name     : gitg
 Version  : 41
-Release  : 35
+Release  : 36
 URL      : https://download.gnome.org/sources/gitg/41/gitg-41.tar.xz
 Source0  : https://download.gnome.org/sources/gitg/41/gitg-41.tar.xz
 Summary  : No detailed summary available
