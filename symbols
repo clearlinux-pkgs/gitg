@@ -115,6 +115,7 @@ libgitg-1.0.so.0:gitg_date_new
 libgitg-1.0.so.0:gitg_date_new_for_date_time
 libgitg-1.0.so.0:gitg_date_parse
 libgitg-1.0.so.0:gitg_date_set_date_string
+libgitg-1.0.so.0:gitg_delete_sources_get_type
 libgitg-1.0.so.0:gitg_diff_image_composite_construct
 libgitg-1.0.so.0:gitg_diff_image_composite_get_cache
 libgitg-1.0.so.0:gitg_diff_image_composite_get_sizing
@@ -150,6 +151,7 @@ libgitg-1.0.so.0:gitg_diff_image_surface_cache_get_window
 libgitg-1.0.so.0:gitg_diff_image_surface_cache_set_new_pixbuf
 libgitg-1.0.so.0:gitg_diff_image_surface_cache_set_old_pixbuf
 libgitg-1.0.so.0:gitg_diff_image_surface_cache_set_window
+libgitg-1.0.so.0:gitg_diff_selectable_clear_selection
 libgitg-1.0.so.0:gitg_diff_selectable_get_can_select
 libgitg-1.0.so.0:gitg_diff_selectable_get_has_selection
 libgitg-1.0.so.0:gitg_diff_selectable_get_selection
@@ -164,6 +166,7 @@ libgitg-1.0.so.0:gitg_diff_stat_new
 libgitg-1.0.so.0:gitg_diff_stat_set_added
 libgitg-1.0.so.0:gitg_diff_stat_set_removed
 libgitg-1.0.so.0:gitg_diff_view_apply_link_tags
+libgitg-1.0.so.0:gitg_diff_view_clear_selection
 libgitg-1.0.so.0:gitg_diff_view_commit_details_construct
 libgitg-1.0.so.0:gitg_diff_view_commit_details_get_commit
 libgitg-1.0.so.0:gitg_diff_view_commit_details_get_expanded
@@ -185,6 +188,7 @@ libgitg-1.0.so.0:gitg_diff_view_file_add_hunk
 libgitg-1.0.so.0:gitg_diff_view_file_add_image_renderer
 libgitg-1.0.so.0:gitg_diff_view_file_add_renderer
 libgitg-1.0.so.0:gitg_diff_view_file_add_text_renderer
+libgitg-1.0.so.0:gitg_diff_view_file_clear_selection
 libgitg-1.0.so.0:gitg_diff_view_file_construct
 libgitg-1.0.so.0:gitg_diff_view_file_get_expanded
 libgitg-1.0.so.0:gitg_diff_view_file_get_info
@@ -331,6 +335,12 @@ libgitg-1.0.so.0:gitg_diff_view_set_wrap_lines
 libgitg-1.0.so.0:gitg_font_manager_construct
 libgitg-1.0.so.0:gitg_font_manager_get_type
 libgitg-1.0.so.0:gitg_font_manager_new
+libgitg-1.0.so.0:gitg_gpg_utils_construct
+libgitg-1.0.so.0:gitg_gpg_utils_get_type
+libgitg-1.0.so.0:gitg_gpg_utils_new
+libgitg-1.0.so.0:gitg_gpg_utils_ref
+libgitg-1.0.so.0:gitg_gpg_utils_sign_commit_object
+libgitg-1.0.so.0:gitg_gpg_utils_unref
 libgitg-1.0.so.0:gitg_hook_add_argument
 libgitg-1.0.so.0:gitg_hook_construct
 libgitg-1.0.so.0:gitg_hook_exists_in
@@ -383,6 +393,7 @@ libgitg-1.0.so.0:gitg_lanes_set_inactive_max
 libgitg-1.0.so.0:gitg_lanes_set_miss_commits
 libgitg-1.0.so.0:gitg_param_spec_async
 libgitg-1.0.so.0:gitg_param_spec_credentials_manager
+libgitg-1.0.so.0:gitg_param_spec_gpg_utils
 libgitg-1.0.so.0:gitg_param_spec_label_renderer
 libgitg-1.0.so.0:gitg_param_spec_patch_set
 libgitg-1.0.so.0:gitg_param_spec_resource
@@ -666,6 +677,7 @@ libgitg-1.0.so.0:gitg_utils_replace_home_dir_with_tilde
 libgitg-1.0.so.0:gitg_utils_unref
 libgitg-1.0.so.0:gitg_value_get_async
 libgitg-1.0.so.0:gitg_value_get_credentials_manager
+libgitg-1.0.so.0:gitg_value_get_gpg_utils
 libgitg-1.0.so.0:gitg_value_get_label_renderer
 libgitg-1.0.so.0:gitg_value_get_patch_set
 libgitg-1.0.so.0:gitg_value_get_resource
@@ -675,6 +687,7 @@ libgitg-1.0.so.0:gitg_value_get_utils
 libgitg-1.0.so.0:gitg_value_get_when_mapped
 libgitg-1.0.so.0:gitg_value_set_async
 libgitg-1.0.so.0:gitg_value_set_credentials_manager
+libgitg-1.0.so.0:gitg_value_set_gpg_utils
 libgitg-1.0.so.0:gitg_value_set_label_renderer
 libgitg-1.0.so.0:gitg_value_set_patch_set
 libgitg-1.0.so.0:gitg_value_set_resource
@@ -684,6 +697,7 @@ libgitg-1.0.so.0:gitg_value_set_utils
 libgitg-1.0.so.0:gitg_value_set_when_mapped
 libgitg-1.0.so.0:gitg_value_take_async
 libgitg-1.0.so.0:gitg_value_take_credentials_manager
+libgitg-1.0.so.0:gitg_value_take_gpg_utils
 libgitg-1.0.so.0:gitg_value_take_label_renderer
 libgitg-1.0.so.0:gitg_value_take_patch_set
 libgitg-1.0.so.0:gitg_value_take_resource
@@ -750,6 +764,8 @@ libgitg-1.0.so.0:xml_reader_read_start_element
 libgitg-1.0.so.0:xml_reader_read_string
 libgitg-1.0.so.0:xml_reader_read_to_next
 libgitg-1.0.so.0:xml_reader_read_to_next_sibling
+libgitg-ext-1.0.so.0:gitg_ext_action_fetch
+libgitg-ext-1.0.so.0:gitg_ext_action_fetch_finish
 libgitg-ext-1.0.so.0:gitg_ext_action_get_type
 libgitg-ext-1.0.so.0:gitg_ext_action_populate_menu
 libgitg-ext-1.0.so.0:gitg_ext_activity_get_type

@@ -1,4 +1,5 @@
-41
+44
+gpgme-dev
 gspell-dev
 json-glib-dev
 libdazzle-dev
@@ -7,5 +8,6 @@ pkgconfig(gspell-1)
 pkgconfig(gtksourceview-4)
 pkgconfig(json-glib-1.0)
 pkgconfig(libdazzle-1.0)
+pkgconfig(libhandy-1)
 pkgconfig(libpeas-1.0)
 pkgconfig(libsecret-1)
