@@ -7,7 +7,7 @@
 #
 Name     : gitg
 Version  : 44
-Release  : 43
+Release  : 44
 URL      : https://download.gnome.org/sources/gitg/44/gitg-44.tar.xz
 Source0  : https://download.gnome.org/sources/gitg/44/gitg-44.tar.xz
 Summary  : No detailed summary available
